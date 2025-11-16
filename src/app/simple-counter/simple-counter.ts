@@ -5,8 +5,16 @@ import { signal,computed,effect } from '@angular/core';
 @Component({
   selector: 'app-simple-counter',
   imports: [],
-  templateUrl: './simple-counter.html',
-  styleUrl: './simple-counter.scss',
+  template: `
+    <div>
+      <h2>Simple Counter Example</h2>
+        <p>Count: {{ counter() }}</p>
+        <p>Double Count: {{ doubleCounter() }}</p>
+        <button (click)="increment()">Increment</button>
+        <button (click)="decrement()">Decrement</button>
+    </div>
+  `,
+  styles: ``,
 })
 export class SimpleCounter {
   counter = signal(0);
