@@ -8,5 +8,9 @@ export const routes: Routes = [
   {
     path: 'linked-signal-container',
     loadComponent: () => import('./linked-signal/linked-signal-container').then(m => m.LinkedSignalContainer)
+  },
+  {
+    path: 'debouncing',
+    loadComponent: () => import('./debouncing/debouncing').then(m => m.Debouncing)
   }
 ];
