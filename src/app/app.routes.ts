@@ -12,5 +12,9 @@ export const routes: Routes = [
   {
     path: 'debouncing',
     loadComponent: () => import('./debouncing/debouncing').then(m => m.Debouncing)
+  },
+  {
+    path: 'conditional-rendering',
+    loadComponent: () => import('./conditional-rendering/conditional-rendering').then(m => m.ConditionalRendering)
   }
 ];
