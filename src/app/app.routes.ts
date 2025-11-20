@@ -16,5 +16,9 @@ export const routes: Routes = [
   {
     path: 'conditional-rendering',
     loadComponent: () => import('./conditional-rendering/conditional-rendering').then(m => m.ConditionalRendering)
+  },
+  {
+    path: 'http-resource',
+    loadComponent: () => import('./http-resource/http-resource').then(m => m.HttpResource)
   }
 ];
