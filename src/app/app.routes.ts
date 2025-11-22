@@ -20,5 +20,9 @@ export const routes: Routes = [
   {
     path: 'http-resource',
     loadComponent: () => import('./http-resource/http-resource').then(m => m.HttpResource)
+  },
+  {
+    path: 'config-tool',
+    loadComponent: () => import('./config-tool/config-tool').then(m => m.ConfigTool)
   }
 ];
