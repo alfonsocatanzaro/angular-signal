@@ -236,13 +236,7 @@
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">
-        @for (item of [
-          { title: 'Simple counter', link: '/simple-counter' },
-          { title: 'LinkedSignal', link: '/linked-signal-container' },
-          { title: 'Debouncing', link: '/debouncing' },
-          { title: 'Conditional Rendering', link: '/conditional-rendering' },
-          { title: 'HTTP resource', link: '/http-resource' },
-        ]; track item.title) {
+        @for (item of navItems; track item.title) {
           <a
             class="pill"
             [href]="item.link"
